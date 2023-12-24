@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  background: var(--Dark-cyan);
+}
+
+main {
+  background-color: var(--Dark-cyan);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+}
+
+.container {
+  width: 100%;
+  min-width: 375px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 326px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 0 1.5em 0;
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile-card:hover {
+  box-shadow: 7px 7px 38px -9px rgba(0, 0, 0, 0.75);
+}
+
+.avatar {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 140px;
+  position: relative;
+}
+
+.image-avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.profile-info {
+  margin-block: 4.5em 0.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+.profile-info .name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.profile-info .age {
+  color: var(--Dark-grayish-blue);
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-left: 0.472em;
+}
+.profile-info .country {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.875rem;
+}
+
+.profile-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+  margin-inline: auto;
+}
+
+.title {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.text {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.625rem;
+  letter-spacing: 0.09375rem;
+}
+
+.content {
+  flex: 1;
+}
